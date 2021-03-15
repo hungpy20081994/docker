@@ -1,7 +1,4 @@
 #!/bin/bash
-
-[ -z "$SUPERVISOR_PWD" ] && echo "Need to set SUPERVISOR_PWD" && exit 1;
-
 # Installation of Docker
 apt-get update
 apt-get install -y \
@@ -54,4 +51,4 @@ unzip -qq -n ngrok-stable-linux-amd64.zip
 
 ./ngrok authtoken  1eJ879JFo0Lde3KB9Z3E7R0q8vN_7CF88NU5Q1epjY9k5Nomr
 ./ngrok tcp 22  
-
+done
